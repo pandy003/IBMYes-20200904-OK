@@ -1,12 +1,13 @@
 name: IBM Cloud Auto Restart
  
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  schedule:
-    - cron: '0 12 * * FRI'
+  #去除下面六個#為原程式碼
+  #push:
+  #  branches: [ master ]
+  #pull_request:
+  #  branches: [ master ]
+  #schedule:
+  #  - cron: '0 12 * * FRI'
 
 jobs:
   ibm-cloud-restart:
