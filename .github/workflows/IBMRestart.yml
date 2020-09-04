@@ -3,13 +3,15 @@
 name: IBM Cloud Auto Restart
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  #push:
+  #  branches: [ master ]
+  #pull_request:
+  #  branches: [ master ]
   schedule:
-    - cron: '0 12 * * FRI'
-
+    - cron: '40 3 * * MON'
+  watch:
+    types: [started]
+    
 jobs:
   ibm-cloud-restart:
     runs-on: ubuntu-latest
