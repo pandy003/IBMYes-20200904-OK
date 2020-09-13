@@ -7,10 +7,10 @@ on:
   #  branches: [ master ]
   #pull_request:
   #  branches: [ master ]
-  schedule:
-    - cron: '20 4 * * MON'
-  watch:
-    types: [started]
+  #schedule:
+  #  - cron: '20 4 * * MON'
+  #watch:
+  #  types: [started]
     
 jobs:
   ibm-cloud-restart:
